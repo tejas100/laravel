@@ -19,8 +19,9 @@ Route::get('/fun', function () {
 
 
 Route::get('/a/{id}',function($id){
-    return 'Id is : '.$id;
+    return 'Id is : '.$id';
 });
+Demo
 */
 
 
