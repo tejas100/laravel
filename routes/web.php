@@ -12,9 +12,9 @@
 */
 
 /*
-Route::get('/fuck', function () {
+Route::get('/fun', function () {
     // return view('welcome');
-    return "fuck youuuuu!!!!!!!";
+    return "Thank youuuuu!!!!!!!";
 });
 
 
@@ -27,3 +27,4 @@ Route::get('/a/{id}',function($id){
 Route::get('/','PagesController@index');
 Route::get('/about','PagesController@about');
 Route::get('/services','PagesController@services');
+Route::resource('post','PostController');
