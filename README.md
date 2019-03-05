@@ -10,10 +10,17 @@
 
 ## Learning Laravel Key Points
 
+<ul class="list-group">
+  <li class="list-group-item">npm run dev     // loock all our assets and compile it</li>
+  <li class="list-group-item">npm run watch   //live compile</li>
+  <li class="list-group-item">php artisan make:controller PostsController //creating controller</li>
+</ul>
 
-npm run dev     // loock all our assets and compile it
-npm run watch   //live compile
-php artisan make:controller PostsController //creating controller
+
+
+
+
+
 php artisan make:model Post -m //creating the Model [-m for migration]
 
 php artisan tinker //tinker [tool used to insert data]
