@@ -10,40 +10,32 @@
 
 ## Learning Laravel Key Points
 
-<ul class="list-group">
-  <li class="list-group-item">npm run dev    <!--- loock all our assets and compile it---></li>
-  <li class="list-group-item">npm run watch  <!--- live compile  ---></li>
-  <li class="list-group-item">php artisan make:controller PostsController <!---creating controller---></li>
-</ul>
+* npm run dev     > loock all our assets and compile it
+* npm run watch   > live compile
+* php artisan make:controller PostsController //creating controller
+* php artisan make:model Post -m //creating the Model [-m for migration]
 
+* php artisan tinker //tinker [tool used to insert data]
+* php artisan make:controller PostsController --resource // to creating a controller with all resources
 
-
-
-
-
-php artisan make:model Post -m //creating the Model [-m for migration]
-
-php artisan tinker //tinker [tool used to insert data]
-php artisan make:controller PostsController --resource // to creating a controller with all resources
-
-php artisan route:list // used to view the the all the routes present in the project
+* php artisan route:list // used to view the the all the routes present in the project
 
 ****************************************************
-use App\Post // using|importing model in controller
-Post::all(); // fetchs all of the data in this -> model ->Post table
+* use App\Post // using|importing model in controller
+* Post::all(); // fetchs all of the data in this -> model ->Post table
 ->with('name',$name) //to pass the variable to the view
 
 ********** Arrange the posts **************
 
-Post::orderBy('date','asc/desc')->get(); // to arrenge the posts in ascendng/des order 
+* Post::orderBy('date','asc/desc')->get(); // to arrenge the posts in ascendng/des order 
 
 ************* Get the limited posts ****************
 
-Post::orderBy('date','asc/desc')-take(1)->get(); // to limit the posts[using take(no,of posts)]
+* Post::orderBy('date','asc/desc')-take(1)->get(); // to limit the posts[using take(no,of posts)]
 
 *********** Pagination [showin next pages] ************************
 
-$posts = Posts::orderBy('craeted_at','desc')->paginate(10);
+* $posts = Posts::orderBy('craeted_at','desc')->paginate(10);
 
-paginate(10)=> will display the 10 posta in a page once we get 11 post it make next page for a upcoming posts
+* paginate(10)=> will display the 10 posta in a page once we get 11 post it make next page for a upcoming posts
 
