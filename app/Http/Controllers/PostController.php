@@ -14,7 +14,11 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts= Post::all();
+
+        // $posts= Post::all();
+        // $posts=Post::orderBy('created_at','desc')->take(1)->get();
+        // $posts=post::orderBy('created_at','desc')->get();
+        $posts=Post::orderBy('created_at','desc')->paginate(1);
         return view('posts.indexo')->with('posts',$posts);
     }
 
@@ -47,7 +51,8 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        //
+      $post= Post::find($id);
+      return view ('posts.show')->with('post',$post);
     }
 
     /**
