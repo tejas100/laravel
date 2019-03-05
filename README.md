@@ -25,15 +25,15 @@
 * Post::all(); // fetchs all of the data in this -> model ->Post table
 ->with('name',$name) //to pass the variable to the view
 
-********** Arrange the posts **************
+##### Arrange the posts 
 
 * Post::orderBy('date','asc/desc')->get(); // to arrenge the posts in ascendng/des order 
 
-************* Get the limited posts ****************
+##### Get the limited posts 
 
 * Post::orderBy('date','asc/desc')-take(1)->get(); // to limit the posts[using take(no,of posts)]
 
-*********** Pagination [showin next pages] ************************
+##### Pagination [showin next pages]
 
 * $posts = Posts::orderBy('craeted_at','desc')->paginate(10);
 
