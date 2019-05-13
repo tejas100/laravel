@@ -15,7 +15,7 @@
     <body>
         @include('inc.navbar')
         @include('inc.sidebar')
-        {{-- <div class="">@yield('content12')</div> --}}
+        <div class="">@yield('content12')</div>
        
         
         </body>

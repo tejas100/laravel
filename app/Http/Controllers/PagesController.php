@@ -9,7 +9,8 @@ class PagesController extends Controller
     public function index(){
 $title = "wecom";
 // return view('pages.index', compact('title') );
-return view('pages.index')->with('title',$title);
+// return view('pages.forms')->with('title',$title);
+return view ('pages.about');
 
     }
 

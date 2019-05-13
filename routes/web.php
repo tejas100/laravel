@@ -26,7 +26,12 @@ check the commit
 */
 
 
-Route::get('/','PagesController@index');
-Route::get('/about','PagesController@about');
-Route::get('/services','PagesController@services');
-Route::resource('posts','PostController');
+// Route::get('/','PagesController@index');
+// Route::get('/about','PagesController@about');
+// Route::get('/services','PagesController@services');
+// Route::resource('posts','PostController');
+
+Route::get('/', function () {
+    return view("pages.forms");
+   
+});
